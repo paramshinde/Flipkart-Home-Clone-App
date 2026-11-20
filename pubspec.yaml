@@ -1,0 +1,44 @@
+name: flipkart_home_clone
+description: Responsive Flipkart-style home screen built with Flutter, MVC and GetX.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  get: ^4.7.3
+  dio: ^5.11.1
+  cached_network_image: ^3.4.1
+  flutter_native_splash: ^2.4.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/images/launcher_icon.png
+  min_sdk_android: 21
+  remove_alpha_ios: true
+
+flutter_native_splash:
+  color: "#FFE500"
+  image: assets/images/splash_mark.png
+  android: true
+  ios: true
+  web: false
+  android_12:
+    color: "#FFE500"
+    image: assets/images/splash_mark.png
